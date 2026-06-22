@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Game Content & QA Engineer</title>
+    <style>
+        /* 기본 백엔드 스타일 세팅 */
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-main: #f8fafc;
+            --text-sub: #94a3b8;
+            --point-color: #38bdf8;
+            --border-color: #334155;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* 헤더 프로필 영역 */
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: var(--point-color);
+            margin-bottom: 10px;
+        }
+
+        header p {
+            color: var(--text-sub);
+            font-size: 1.1rem;
+        }
+
+        /* 섹션 공통 */
+        section {
+            margin-bottom: 35px;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            color: var(--point-color);
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        h2::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background-color: var(--border-color);
+        }
+
+        /* 카드 스타일 (프로젝트/경력) */
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 15px;
+        }
+
+        .card-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .card-sub {
+            color: var(--point-color);
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+        }
+
+        .card-desc {
+            color: var(--text-sub);
+            font-size: 0.95rem;
+        }
+
+        /* 스킬 태그 */
+        .tag-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 10px;
+        }
+
+        .tag {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            border: 1px solid var(--point-color);
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+        }
+
+        /* 인포 리스트 */
+        .info-list {
+            list-style: none;
+        }
+
+        .info-list li {
+            margin-bottom: 8px;
+            color: var(--text-sub);
+        }
+
+        .info-list strong {
+            color: var(--text-main);
+        }
+
+        /* 푸터 */
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            color: var(--text-sub);
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- 메인 헤더 프로필 -->
+        <header>
+            <h1>GAME CONTENT & QA ENGINEER</h1>
+            <p>분석적인 시선으로 시스템의 빈틈을 찾고, 완성도 높은 게임을 빌드합니다.</p>
+        </header>
+
+        <!-- 프로필 정보 -->
+        <section>
+            <h2>[01] Profile</h2>
+            <div class="card">
+                <ul class="info-list">
+                    <li><strong>전공 분야:</strong> 게임 콘텐츠 및 컴퓨터 시스템 공학</li>
+                    <li><strong>핵심 역량:</strong> 게임 로직 디버깅, 버그 리포트 작성 및 분석, 시스템 예외 처리 QA</li>
+                    <li><strong>관심 장르:</strong> 하이엔드 competitive 슈터, 익스트랙션 RPG</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- 진행 중인 프로젝트 -->
+        <section>
+            <h2>[02] Core Project</h2>
+            <div class="card">
+                <div class="card-title">Undersea Scavenger: Sunken Paradise</div>
+                <div class="card-sub">모바일 익스트랙션 RPG / shooter (자체 개발 진행 중)</div>
+                <div class="card-desc">
+                    심해를 배경으로 한 하드코어 파밍 및 탈출 시스템 설계. 인게임 UI 구조, 리스크-리턴 기반의 비즈니스 모델, 예외 상황 방지를 위한 게임 논리 구조 시뮬레이션 및 데이터 밸런싱 담당.
+                </div>
+                <div class="tag-container">
+                    <span class="tag">Game Design</span>
+                    <span class="tag">Economy Balancing</span>
+                    <span class="tag">UI/UX Flow</span>
+                    <span class="tag">ASO</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- 기술 스택 및 역량 -->
+        <section>
+            <h2>[03] Technical Skills & Competencies</h2>
+            <div class="card">
+                <div class="card-title" style="font-size: 1rem; margin-bottom: 10px;">QA & 분석 도구</div>
+                <div class="tag-container" style="margin-bottom: 15px;">
+                    <span class="tag">BTS (Jira)</span>
+                    <span class="tag">테스트 케이스 설계</span>
+                    <span class="tag">버그 재현 및 로그 분석</span>
+                    <span class="tag">유저 피드백 데이터 마이닝</span>
+                </div>
+                <div class="card-title" style="font-size: 1rem; margin-bottom: 10px;">게임 및 데이터 베이스</div>
+                <div class="tag-container">
+                    <span class="tag">컴퓨터 시스템 구조</span>
+                    <span class="tag">데이터 밸런싱</span>
+                    <span class="tag">콘텐츠 통계 분석</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- 푸터 -->
+        <footer>
+            <p>© 2026 Game Portfolio. All Logs Secured.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
