@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Game Content & QA Engineer</title>
+    <title>Portfolio | Game QA & GM Engineer</title>
     <style>
-        /* 기본 백엔드 스타일 세팅 */
         :root {
             --bg-color: #0f172a;
             --card-bg: #1e293b;
@@ -30,11 +29,10 @@
         }
 
         .container {
-            max-width: 800px;
+            max-width: 900px;
             margin: 0 auto;
         }
 
-        /* 헤더 프로필 영역 */
         header {
             text-align: center;
             margin-bottom: 40px;
@@ -43,7 +41,7 @@
         }
 
         header h1 {
-            font-size: 2.5rem;
+            font-size: 2.3rem;
             color: var(--point-color);
             margin-bottom: 10px;
         }
@@ -53,13 +51,12 @@
             font-size: 1.1rem;
         }
 
-        /* 섹션 공통 */
         section {
             margin-bottom: 35px;
         }
 
         h2 {
-            font-size: 1.5rem;
+            font-size: 1.4rem;
             color: var(--point-color);
             margin-bottom: 15px;
             display: flex;
@@ -74,7 +71,6 @@
             background-color: var(--border-color);
         }
 
-        /* 카드 스타일 (프로젝트/경력) */
         .card {
             background-color: var(--card-bg);
             border: 1px solid var(--border-color);
@@ -84,15 +80,9 @@
         }
 
         .card-title {
-            font-size: 1.2rem;
+            font-size: 1.15rem;
             font-weight: bold;
             margin-bottom: 5px;
-        }
-
-        .card-sub {
-            color: var(--point-color);
-            font-size: 0.9rem;
-            margin-bottom: 10px;
         }
 
         .card-desc {
@@ -100,7 +90,6 @@
             font-size: 0.95rem;
         }
 
-        /* 스킬 태그 */
         .tag-container {
             display: flex;
             flex-wrap: wrap;
@@ -117,21 +106,39 @@
             font-size: 0.85rem;
         }
 
-        /* 인포 리스트 */
-        .info-list {
-            list-style: none;
+        .history-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+            font-size: 0.85rem;
         }
 
-        .info-list li {
-            margin-bottom: 8px;
+        .history-table th, .history-table td {
+            padding: 10px 12px;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .history-table th {
+            background-color: var(--bg-color);
+            color: var(--point-color);
+            font-weight: bold;
+        }
+
+        .history-table td {
             color: var(--text-sub);
         }
 
-        .info-list strong {
-            color: var(--text-main);
+        .history-table tr:hover {
+            background-color: rgba(56, 189, 248, 0.03);
         }
 
-        /* 푸터 */
+        .date-col {
+            white-space: nowrap;
+            color: var(--point-color) !important;
+            font-weight: bold;
+        }
+
         footer {
             text-align: center;
             margin-top: 50px;
@@ -145,63 +152,215 @@
     <div class="container">
         <!-- 메인 헤더 프로필 -->
         <header>
-            <h1>GAME CONTENT & QA ENGINEER</h1>
-            <p>분석적인 시선으로 시스템의 빈틈을 찾고, 완성도 높은 게임을 빌드합니다.</p>
+            <h1>GAME QA & GM PORTFOLIO</h1>
+            <p>논리적 시스템 분석을 통한 빌드 검증 및 유저 데이터 기반의 라이브 서비스 고도화</p>
         </header>
 
-        <!-- 프로필 정보 -->
+        <!-- 프로필 정보 개요 -->
         <section>
-            <h2>[01] Profile</h2>
+            <h2>[01] Overview</h2>
             <div class="card">
-                <ul class="info-list">
-                    <li><strong>전공 분야:</strong> 게임 콘텐츠 및 컴퓨터 시스템 공학</li>
-                    <li><strong>핵심 역량:</strong> 게임 로직 디버깅, 버그 리포트 작성 및 분석, 시스템 예외 처리 QA</li>
-                    <li><strong>관심 장르:</strong> 하이엔드 competitive 슈터, 익스트랙션 RPG</li>
+                <ul style="list-style: none;">
+                    <li style="margin-bottom: 8px;"><strong>전공 분야:</strong> 게임 콘텐츠 및 컴퓨터 시스템 공학</li>
+                    <li style="margin-bottom: 8px;"><strong>핵심 역량:</strong> 비정형 빌드 테스트, 유저 로그 기반 이슈 트래킹, 예외 상황 QA 및 라이브 모니터링</li>
+                    <li style="margin-bottom: 0;"><strong>목표 포지션:</strong> 게임 품질 보증(QA) 엔지니어, 라이브 서비스 게임 마스터(GM)</li>
                 </ul>
             </div>
         </section>
 
-        <!-- 진행 중인 프로젝트 -->
+        <!-- 핵심 QA/GM 역량 요약 -->
         <section>
-            <h2>[02] Core Project</h2>
+            <h2>[02] Core Competencies</h2>
             <div class="card">
-                <div class="card-title">Undersea Scavenger: Sunken Paradise</div>
-                <div class="card-sub">모바일 익스트랙션 RPG / shooter (자체 개발 진행 중)</div>
+                <div class="card-title">품질 보증 (QA) 부문</div>
                 <div class="card-desc">
-                    심해를 배경으로 한 하드코어 파밍 및 탈출 시스템 설계. 인게임 UI 구조, 리스크-리턴 기반의 비즈니스 모델, 예외 상황 방지를 위한 게임 논리 구조 시뮬레이션 및 데이터 밸런싱 담당.
+                    게임 빌드의 논리적 예외 상황 사전 스캔. 테스트 케이스 디자인 및 체크리스트 기반의 기능성 검증 프로세스 수행. 인게임 재화 인플레이션 리스크 추적 및 데이터 밸런싱 모니터링 능력 보유.
                 </div>
                 <div class="tag-container">
-                    <span class="tag">Game Design</span>
-                    <span class="tag">Economy Balancing</span>
-                    <span class="tag">UI/UX Flow</span>
-                    <span class="tag">ASO</span>
+                    <span class="tag">테스트 케이스 설계</span>
+                    <span class="tag">버그 재현 및 디버깅</span>
+                    <span class="tag">밸런스 데이터 검증</span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-title">게임 마스터 (GM) 부문</div>
+                <div class="card-desc">
+                    유저 커뮤니티 동향 마이닝 및 인게임 로그 분석을 통한 리스크 관리. 불법 프로그램 및 작업장 동향 모니터링 대응. 라이브 세션 잔존율 방어를 위한 인게임 서비스 최적화 가동.
+                </div>
+                <div class="tag-container">
+                    <span class="tag">라이브 모니터링</span>
+                    <span class="tag">동향 마이닝</span>
+                    <span class="tag">이슈 리스크 관리</span>
                 </div>
             </div>
         </section>
 
-        <!-- 기술 스택 및 역량 -->
+        <!-- CBT / 얼리엑세스 테스트 히스토리 세션 -->
         <section>
-            <h2>[03] Technical Skills & Competencies</h2>
+            <h2>[03] Test History (CBT / OBT / Early Access)</h2>
+            <div class="card" style="padding: 10px; overflow-x: auto;">
+                <table class="history-table">
+                    <thead>
+                        <tr>
+                            <th style="width: 12%;">기간</th>
+                            <th style="width: 38%;">게임 타이틀 / 플랫폼</th>
+                            <th style="width: 15%;">테스트 유형</th>
+                            <th style="width: 35%;">수행 내역 및 핵심 검증 포인트</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="date-col">2026.05</td>
+                            <td><strong>서브노티카2 (Subnautica 2)</strong></td>
+                            <td>얼리 액세스</td>
+                            <td>심해 환경 오브젝트 충돌 판정 및 크래프팅 데이터 밸런싱 검증</td>
+                        </tr>
+                        <tr>
+                            <td class="date-col">2025.10</td>
+                            <td><strong>아크 레이더스 (ARC Raiders)</strong></td>
+                            <td>OBT</td>
+                            <td>다중 유저 세션 동시 진입 시 서버 부하 및 매칭 시스템 안정성 분석</td>
+                        </tr>
+                        <tr>
+                            <td class="date-col">2025.09</td>
+                            <td><strong>슈퍼피플 (SUPER PEOPLE)</strong></td>
+                            <td>얼리 액세스</td>
+                            <td>인게임 클래스별 스킬 데이터 분석 및 경제 시스템 인플레이션 트래킹</td>
+                        </tr>
+                        <tr>
+                            <td class="date-col">2025.06</td>
+                            <td><strong>슈퍼피플 (SUPER PEOPLE)</strong></td>
+                            <td>CBT</td>
+                            <td>신규 빌드 기능성 테스트 및 비정상 스킬 캔슬 기믹 재현성 검증</td>
+                        </tr>
+                        <tr>
+                            <td class="date-col">2025.05</td>
+                            <td><strong>아크 레이더스 (ARC Raiders)</strong></td>
+                            <td>2차 테크니컬 베타</td>
+                            <td>PVEVP 환경 핵심 동선 내 맵 구조물 뚫기(Clip) 예외 처리 스캔</td>
+                        </tr>
+                        <tr>
+                            <td class="date-col">2025.04</td>
+                            <td><strong>쿠키런: 오븐스매시</strong></td>
+                            <td>CBT</td>
+                            <td>캐주얼 액션 장르 특성에 따른 캐릭터 간 히트박스 판정 리스크 검증</td>
+                        </tr>
+                        <tr>
+                            <td class="date-col">2024.09</td>
+                            <td><strong>슈퍼바이브 (SUPERVIVE)</strong></td>
+                            <td>CBT</td>
+                            <td>쿼터뷰 배틀로얄 지형 고저차에 따른 스킬 판정 및 투사체 궤적 분석</td>
+                        </tr>
+                        <tr>
+                            <td class="date-col">2024.07</td>
+                            <td><strong>원스 휴먼 (Once Human)</strong></td>
+                            <td>얼리 액세스</td>
+                            <td>오픈월드 인프라 구축 시스템 연산 과부하 및 거대 보스 기믹 오류 추적</td>
+                        </tr>
+                        <tr>
+                            <td class="date-col">2024.06</td>
+                            <td><strong>이스케이프 프롬 타코프 (Escape from Tarkov)</strong></td>
+                            <td>OBT</td>
+                            <td>하드코어 익스트랙션 슈터 총기 모딩 호환성 및 세션 탈출 로직 검증</td>
+                        </tr>
+                        <tr>
+                            <td class="date-col">2024.01</td>
+                            <td><strong>팰월드 (Palworld)</strong></td>
+                            <td>얼리 액세스</td>
+                            <td>네트워크 세션 내 거점 오브젝트 배치 한계 및 몬스터 AI 네비게이션 오류 스캔</td>
+                        </tr>
+                        <tr>
+                            <td class="date-col">2023.11</td>
+                            <td><strong>낙원: 라스트 파라다이스</strong></td>
+                            <td>OAT</td>
+                            <td>잠입 익스트랙션 구조 내 좀비 AI 인식 범위 및 사운드 플레이 메커니즘 분석</td>
+                        </tr>
+                        <tr>
+                            <td class="date-col">2023.08</td>
+                            <td><strong>썬큰랜드 (Sunkenland)</strong></td>
+                            <td>얼리 액세스</td>
+                            <td>해양 생존 빌드 내 수중 물리 엔진 연산 및 하우징 에셋 파괴 메커니즘 검증</td>
+                        </tr>
+                        <tr>
+                            <td class="date-col">2023.05</td>
+                            <td><strong>더 파이널스 (The Finals)</strong></td>
+                            <td>CBT</td>
+                            <td>지형지물 전면 파괴에 따른 서버 동기화 랙 및 프레임 드랍 최적화 모니터링</td>
+                        </tr>
+                        <tr>
+                            <td class="date-col">2023.03</td>
+                            <td><strong>선즈 오브 더 포레스트 (Sons of the Forest)</strong></td>
+                            <td>얼리 액세스</td>
+                            <td>동적 AI 동료 시스템 명령 수행 오류 및 맵 경계선 예외 지역 이탈 버그 리포팅</td>
+                        </tr>
+                        <tr>
+                            <td class="date-col">2022.11</td>
+                            <td><strong>데이브 더 다이버</strong></td>
+                            <td>얼리 액세스</td>
+                            <td>타이쿤/어드벤처 하이브리드 루프 내 UI 뎁스 및 재화 정산 로직 검증</td>
+                        </tr>
+                        <tr>
+                            <td class="date-col">2022.09</td>
+                            <td><strong>콜 오브 듀티: 모던 워페어 II</strong></td>
+                            <td>OBT</td>
+                            <td>총기 플랫폼 언락 데이터 동기화 및 킬스트릭 연출 시각적 아티팩트 에러 추적</td>
+                        </tr>
+                        <tr>
+                            <td class="date-col">2022.04</td>
+                            <td><strong>더 플래닛 크래프터 (The Planet Crafter)</strong></td>
+                            <td>얼리 액세스</td>
+                            <td>지형 테라포밍 단계별 텍스처 변경 데이터 정산 및 환경 수치 누적 연산 에러 검증</td>
+                        </tr>
+                        <tr>
+                            <td class="date-col">2021.09</td>
+                            <td><strong>더 본파이어 2 (The Bonfire 2)</strong></td>
+                            <td>OBT</td>
+                            <td>경영 시뮬레이션 내 주민 배치 알고리즘 및 야간 습격 페이즈 트리거 분석</td>
+                        </tr>
+                        <tr>
+                            <td class="date-col">2021.09</td>
+                            <td><strong>배틀필드 2042</strong></td>
+                            <td>OBT</td>
+                            <td>128인 대규모 세션 진입 네트코드 패킷 손실 및 탈것 물리 충돌 버그 추적</td>
+                        </tr>
+                        <tr>
+                            <td class="date-col">2021.08</td>
+                            <td><strong>슈퍼피플 (SUPER PEOPLE)</strong></td>
+                            <td>Alpha (CAT)</td>
+                            <td>초기 알파 빌드 내 텍스처 팝인 현상 및 클라이언트 크래시 예외 코드 스캔</td>
+                        </tr>
+                        <tr>
+                            <td class="date-col">2020.10</td>
+                            <td><strong>콜 오브 듀티: 블랙 옵스 콜드 워</strong></td>
+                            <td>OBT</td>
+                            <td>크로스 플레이 환경 플랫폼 간 입력 장치 보정 데이터 밸런싱 모니터링</td>
+                        </tr>
+                        <tr>
+                            <td class="date-col">2020.09</td>
+                            <td><strong>더 본파이어: 포세이큰 랜즈</strong></td>
+                            <td>얼리 액세스</td>
+                            <td>생존 인디 루프 내 세이브 데이터 손상 예외 처리 및 리소스 누수 검증</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- 기술 스택 및 분석 도구 -->
+        <section>
+            <h2>[04] Technical Specs</h2>
             <div class="card">
-                <div class="card-title" style="font-size: 1rem; margin-bottom: 10px;">QA & 분석 도구</div>
-                <div class="tag-container" style="margin-bottom: 15px;">
-                    <span class="tag">BTS (Jira)</span>
-                    <span class="tag">테스트 케이스 설계</span>
-                    <span class="tag">버그 재현 및 로그 분석</span>
-                    <span class="tag">유저 피드백 데이터 마이닝</span>
-                </div>
-                <div class="card-title" style="font-size: 1rem; margin-bottom: 10px;">게임 및 데이터 베이스</div>
                 <div class="tag-container">
                     <span class="tag">컴퓨터 시스템 구조</span>
-                    <span class="tag">데이터 밸런싱</span>
-                    <span class="tag">콘텐츠 통계 분석</span>
+                    <span class="tag">Excel / Google Sheets 데이터 자동화</span>
+                    <span class="tag">Unity 엔진 환경 이해</span>
+                    <span class="tag">Jira / BTS 기반 버그 리포팅</span>
                 </div>
             </div>
         </section>
 
-        <!-- 푸터 -->
         <footer>
-            <p>© 2026 Game Portfolio. All Logs Secured.</p>
+            <p>© 2026 QA & GM Portfolio. All Systems Functional.</p>
         </footer>
     </div>
 
